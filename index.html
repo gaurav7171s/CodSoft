@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <style type="text/css">
+        
+        body{
+         background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+                               url('travel-sunrise-idyllic-relax-natural.jpg');        
+                               background-size: cover;
+                               margin: 0;
+                              padding: 0;
+        }
+        
+        header{
+            width: 100%;
+            height: 100vh;
+
+            font-family: sans-serif;
+         }
+         nav{
+
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+         }
+         .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+         }
+         .menu a{
+            text-decoration: none;
+            color:white ;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+         }
+         .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid rgb(84, 12, 230);
+            transition: 0.4s linear;
+         }
+         .menu a:hover:before{
+            width: 90%;
+         }
+         .register a{
+            text-decoration: none;
+            color: white ;
+            padding: 10px 20px;
+            background: rgb(84, 12, 230);
+            border-radius: 8px;
+            position: relative;
+            transition: 0.4s;
+         }
+         .register a:hover{
+            background: transparent;
+            border: 1px solid rgb(84, 12, 230);
+         }
+         .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+         }
+         .h-txt span{
+            letter-spacing: 5px;
+         }
+         .h-txt h1{
+            font-size: 3.5em;
+         }
+         .h-txt a{
+            text-decoration: none;
+            background-color: rgb(84, 12, 230);
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+         }
+         .h-txt a:hover{
+            background: transparent;
+            border: 1px solid rgb(84, 12, 230);
+         }
+         .service-box{
+            background-color: inherit;
+            width: 250px;
+            height: 250px;
+            color: white;
+            border-radius: 25px;
+            text-align: center;
+            padding-top: 18px;
+            display: inline-block;
+            margin-right: 80px;
+            margin-left: 450px;
+
+         }
+         .service-box h1{
+             font-size: 25px;
+         }
+         .service-box:hover{
+            background-color: rgb(185, 235, 244);
+            width: 250px;
+            height: 250px;
+            color: black;
+            border-radius: 25px;
+            text-align: center;
+            border: 3px;
+            border-color: black;
+            padding-top: 18px;
+            display: inline-block;
+            margin-right: 80px;
+            margin-left: 450px;
+
+         }
+
+
+         .serb{
+            text-decoration: none;
+            background-color: rgb(84, 12, 230);
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+         }
+         .serb:hover{
+            background: transparent;
+            border: 1px solid rgb(84, 12, 230);
+         } 
+
+         .service-box2{
+            background-color: inherit;
+            width: 250px;
+            height: 250px;
+            color: white;
+            border-radius: 25px;
+            text-align: center;
+            padding-top: 18px;
+            display: inline-block;
+            margin-right: 120px;
+
+         }
+
+         .service-box3{
+            background-color: inherit;
+            width: 250px;
+            height: 250px;
+            color: white;
+            border-radius: 25px;
+            text-align: center;
+            padding-top: 18px;
+            display: inline-block;
+            margin-right: 80px;
+
+         }
+
+         .service-box2 h1{
+             font-size: 25px;
+         }
+         .service-box2:hover{
+            background-color: rgb(185, 235, 244);
+            width: 250px;
+            height: 250px;
+            color: black;
+            border-radius: 25px;
+            text-align: center;
+            border: 3px;
+            border-color: black;
+            padding-top: 18px;
+            
+
+         }
+
+         .service-box3 h1{
+             font-size: 25px;
+         }
+         .service-box3:hover{
+            background-color: rgb(185, 235, 244);
+            width: 250px;
+            height: 250px;
+            color: black;
+            border-radius: 25px;
+            text-align: center;
+            border: 3px;
+            border-color: black;
+            padding-top: 18px;
+            display: inline-block;
+            margin-right: 10px;
+
+            
+
+         }
+
+         .ftr{
+
+            background-color: black;
+            color: whitesmoke;
+            padding: 0;
+            margin: 0;
+         }
+
+    </style>
+
+</head>
+<body>
+    
+    <header> 
+        <nav>
+            <div class="logo">    
+                Stay N Travel
+            </div>    
+            <div class="menu">
+               <a href="#">Home</a>
+               <a href="#">Hill Stations</a>
+               <a href="#">Top Offer's</a>
+               <a href="#">Our Offical Sites</a>
+               <a href="#">Contact Us</a>
+               <a href="#">About Us</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <span>Lets Begin Your Special Tour with </span>
+            <h1> Trusted Tour Company </h1>
+
+            <br>
+            <a href="#">Book Your Holiday</a>
+        </section>
+         <br>
+         <br>
+    </header>
+    
+    <main>
+      <div class="services">
+         <div class="service-box">
+   
+            <h3>Domestic Tours</h3>
+            
+            <p>Get the Taste of Your Own Country Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button class="serb">
+               Book Now
+            </button>
+         </div>
+
+         <div class="service-box2">
+   
+            <h3>Foreign Tours</h3>
+            
+            <p>Get the Taste of Other Country Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button class="serb">
+               Book Now
+            </button>
+         </div>
+
+         <div class="service-box3">
+   
+            <h3>Combined Tours</h3>
+            
+            <p>Get the Taste of Your Own & Other Country Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button class="serb">
+               Book Now
+            </button>
+         </div>
+
+
+      </div>  
+
+    </main>
+     
+      <footer class="ftr">
+        <H1> Stay N Travel</H1>
+        <h2> Sector 25- Phoenix Complex<br>
+        Geeta Nagar, Akola -444 001.
+      </h2>  
+      </footer>
+
+
+
+
+
+</body>
+</html>
